@@ -1,0 +1,141 @@
+body {
+    padding: 8px;
+    background-image: url(nebula_night_starry_sky_178907_3840x2400.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 140px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 48px; 
+}
+
+.description {
+    color: whitesmoke;
+    word-wrap: break-word;
+    max-width: 500px;
+    font-size: 22px;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+.intro {
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+.intropic-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.intropic {
+    background-image: url(nightsky.gif);
+    background-size: cover;
+    border-radius: 10%;
+    height: 200px;
+    width: 500px;
+    margin-top: 50px;  /*adjust according to desire*/
+    margin-left: 70px;  /*adjust according to desire*/
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, dodgerblue, purple); /* Use a linear gradient with multiple colors to give the sign up a multicolor touch*/
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(to right, purple, dodgerblue); /* Reverse the order of colors for hover effect */
+}
+
+/*container 1 ends here*/
+
+.container2 {
+    position: relative; /* Add relative positioning to the container */
+    padding: 20px; /* Add some padding to the container */
+}
+
+.container2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400%;
+    background-color: rgb(84, 3, 121, 0.45); /* Set the background color with an opacity of 0.7 */
+    z-index: -1;
+    border-radius: 10px;
+    border-bottom: 40px;
+}
+
+.info {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 0px 24px 96px 24px;
+}
+.img1 {
+    background-image: url(pillarsofcreation.jpg);
+    width: 10%;
+    height: 10%;
+    border-radius: 10%;
+}
