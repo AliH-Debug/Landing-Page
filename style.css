@@ -49,7 +49,7 @@ h1 {
     font-size: 22px;
 }
 
-.container1 {
+.opening {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -79,7 +79,7 @@ h1 {
     margin-left: 70px;  /*adjust according to desire*/
 }
 
-.button {
+.opening button {
     display: inline-block;
     padding: 10px 20px;
     border: none;
@@ -98,20 +98,20 @@ h1 {
     background: linear-gradient(to right, purple, dodgerblue); /* Reverse the order of colors for hover effect */
 }
 
-/*container 1 ends here*/
+/*opening ends here*/
 
-.container2 {
+.content {
     position: relative; /* Add relative positioning to the container */
     padding: 20px; /* Add some padding to the container */
 }
 
-.container2::before {
+.content::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 400%;
+    height: 110%;
     background-color: rgb(84, 3, 121, 0.45); /* Set the background color with an opacity of 0.7 */
     z-index: -1;
     border-radius: 10px;
@@ -130,12 +130,111 @@ h1 {
 .pictures {
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
-    padding: 0px 24px 96px 24px;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.img1 {
-    background-image: url(pillarsofcreation.jpg);
-    width: 10%;
-    height: 10%;
-    border-radius: 10%;
+
+.pictures img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 25px 50px 0px 20px;
+}
+
+.pictures p{
+    text-align: center;
+    font: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke; 
+    margin: 10px 30px 0px 0px;
+}
+
+/*content class ends here*/
+
+.quote {
+    position: relative; 
+    padding: 20px; 
+}
+
+.quote::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: -220px;
+    width: 200%;
+    height: 80%;
+    background-color: rgba(40, 35, 42, 0.9); /* Set the background color with an opacity of 0.7 */
+    z-index: -1;
+    border-radius: 10px;
+    border-bottom: 40px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 150px;
+}
+
+.quote h1 {
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+.quote b {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* quote ends here*/
+
+.signup {
+    background-color: rgba(210, 131, 246, 0.45);
+    margin: 50px 450px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border-color: none;
+}
+
+.sign-item {
+    flex: 1;
+}
+
+.signs-text {
+    text-align: center;
+    font-size: large;
+}
+
+.signs-text p {
+    color: whitesmoke;
+    opacity: 0.9;
+    margin: 5px 50px 5px;
+}
+
+.signup h3 {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    padding: 5px 50px 15px;
+}
+
+.signs-button button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, dodgerblue, purple); /* Use a linear gradient with multiple colors to give the sign up a multicolor touch*/
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
