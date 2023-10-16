@@ -37,6 +37,8 @@ nav ul {
     flex-direction: row;
 }
 
+/*header ends here*/
+
 h1 {
     color: whitesmoke;
     font-size: 48px; 
@@ -237,4 +239,14 @@ h1 {
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+/* signup ends here*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: whitesmoke;
 }
