@@ -1,0 +1,252 @@
+body {
+    padding: 8px;
+    background-image: url(nebula_night_starry_sky_178907_3840x2400.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 140px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+}
+
+/*header ends here*/
+
+h1 {
+    color: whitesmoke;
+    font-size: 48px; 
+}
+
+.description {
+    color: whitesmoke;
+    word-wrap: break-word;
+    max-width: 500px;
+    font-size: 22px;
+}
+
+.opening {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+.intro {
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+.intropic-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.intropic {
+    background-image: url(nightsky.gif);
+    background-size: cover;
+    border-radius: 10%;
+    height: 200px;
+    width: 500px;
+    margin-top: 50px;  /*adjust according to desire*/
+    margin-left: 70px;  /*adjust according to desire*/
+}
+
+.opening button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, dodgerblue, purple); /* Use a linear gradient with multiple colors to give the sign up a multicolor touch*/
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(to right, purple, dodgerblue); /* Reverse the order of colors for hover effect */
+}
+
+/*opening ends here*/
+
+.content {
+    position: relative; /* Add relative positioning to the container */
+    padding: 20px; /* Add some padding to the container */
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-color: rgb(84, 3, 121, 0.45); /* Set the background color with an opacity of 0.7 */
+    z-index: -1;
+    border-radius: 10px;
+    border-bottom: 40px;
+}
+
+.info {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pictures img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 25px 50px 0px 20px;
+}
+
+.pictures p{
+    text-align: center;
+    font: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke; 
+    margin: 10px 30px 0px 0px;
+}
+
+/*content class ends here*/
+
+.quote {
+    position: relative; 
+    padding: 20px; 
+}
+
+.quote::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: -220px;
+    width: 200%;
+    height: 80%;
+    background-color: rgba(40, 35, 42, 0.9); /* Set the background color with an opacity of 0.7 */
+    z-index: -1;
+    border-radius: 10px;
+    border-bottom: 40px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 150px;
+}
+
+.quote h1 {
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+.quote b {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* quote ends here*/
+
+.signup {
+    background-color: rgba(210, 131, 246, 0.45);
+    margin: 50px 450px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border-color: none;
+}
+
+.sign-item {
+    flex: 1;
+}
+
+.signs-text {
+    text-align: center;
+    font-size: large;
+}
+
+.signs-text p {
+    color: whitesmoke;
+    opacity: 0.9;
+    margin: 5px 50px 5px;
+}
+
+.signup h3 {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    padding: 5px 50px 15px;
+}
+
+.signs-button button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, dodgerblue, purple); /* Use a linear gradient with multiple colors to give the sign up a multicolor touch*/
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* signup ends here*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: whitesmoke;
+}
