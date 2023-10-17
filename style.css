@@ -3,7 +3,7 @@ body {
     background-image: url(nebula_night_starry_sky_178907_3840x2400.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    margin: 0;
 }
 
 .logo {
