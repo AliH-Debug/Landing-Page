@@ -4,6 +4,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 .logo {
@@ -257,6 +264,10 @@ h1 {
 
 @media only screen and (max-width: 768px) {
     /* Adjust styles for smaller screens */
+    body {
+        background-attachment: scroll;
+    }
+
     .opening {
         grid-template-columns: 1fr;
     }
