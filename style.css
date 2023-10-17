@@ -197,11 +197,9 @@ h1 {
     margin: 50px 300px;
     padding: 10px 10px;
     display: flex;
-    position: relative;
     align-items: center;
     border-radius: 10px;
     border-color: none;
-    width: fit-content;
 }
 
 .sign-item {
@@ -251,43 +249,3 @@ h1 {
     color: whitesmoke;
 }
 
-@media (max-width: 768px) {
-    body {
-        padding: 4px;
-    }
-
-    .logo {
-        font-size: 24px;
-    }
-
-    ul {
-        margin-left: 20px;
-    }
-
-    a {
-        font-size: 18px;
-    }
-
-    header {
-        justify-content: space-between;
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 36px;
-    }
-
-    .intro {
-        margin-left: 20px;
-    }
-
-    .intropic {
-        width: 100%;
-        margin: 0;
-    }
-
-    .pictures img {
-        width: 100%;
-        margin: 5px 0;
-    }
-}
