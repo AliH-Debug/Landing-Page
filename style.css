@@ -1,12 +1,9 @@
 body {
-    padding: 0px;
-    margin: 0px;
+    padding: 8px;
     background-image: url(nebula_night_starry_sky_178907_3840x2400.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     background-attachment: fixed;
-    height: 100vh;
 }
 
 .logo {
@@ -40,8 +37,6 @@ nav ul {
     flex-direction: row;
 }
 
-/*header ends here*/
-
 h1 {
     color: whitesmoke;
     font-size: 48px; 
@@ -55,12 +50,10 @@ h1 {
 }
 
 .opening {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 100px;
 }
 
 .intro {
@@ -157,7 +150,7 @@ h1 {
     margin: 10px 30px 0px 0px;
 }
 
-/*content class ends here*/ 
+/*content class ends here*/
 
 .quote {
     position: relative; 
@@ -254,98 +247,4 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     color: whitesmoke;
-}
-
-/*footer ends here*/
-
-/* Media queries for responsiveness*/
-
-@media only screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens */
-    body {
-        background-attachment: scroll;
-    }
-
-    .opening {
-        grid-template-columns: 1fr;
-    }
-
-    .intropic-container {
-        margin-left: 0;
-        margin-top: 0;
-        justify-content: center;
-    }
-
-    .intropic {
-        margin: 0;
-    }
-
-    .pictures img {
-        width: 150px;
-        height: 150px;
-        margin: 10px;
-    }
-
-    .quote {
-        padding: 20px;
-    }
-
-    .signup {
-        margin: 20px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    /* Adjust styles for even smaller screens */
-    .logo {
-        font-size: 24px;
-    }
-
-    nav ul {
-        margin-left: 0;
-    }
-
-    a {
-        font-size: 18px;
-    }
-
-    .intro {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
-    .intropic {
-        width: 100%;
-        height: auto;
-    }
-
-    .pictures img {
-        width: 100px;
-        height: 100px;
-        margin: 5px;
-    }
-
-    .pictures p {
-        font-size: 36px;
-    }
-
-    .quote {
-        padding: 10px;
-    }
-
-    .quote h1 {
-        font-size: 24px;
-    }
-
-    .quote b {
-        font-size: 18px;
-    }
-
-    .signup {
-        margin: 10px;
-    }
-
-    .signup h3 {
-        font-size: 18px;
-    }
 }
