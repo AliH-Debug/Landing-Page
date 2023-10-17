@@ -197,6 +197,7 @@ h1 {
     margin: 50px 300px;
     padding: 10px 10px;
     display: flex;
+    position: relative;
     align-items: center;
     border-radius: 10px;
     border-color: none;
