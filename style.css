@@ -196,7 +196,7 @@ h1 {
     background-color: rgba(210, 131, 246, 0.45);
     margin: 50px 300px;
     padding: 10px 10px;
-    display: flex;
+    display: grid;
     align-items: center;
     border-radius: 10px;
     border-color: none;
