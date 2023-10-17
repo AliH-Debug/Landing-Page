@@ -248,3 +248,91 @@ h1 {
     font-size: large;
     color: whitesmoke;
 }
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .opening {
+        grid-template-columns: 1fr;
+    }
+
+    .intropic-container {
+        margin-left: 0;
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    .intropic {
+        margin: 0;
+    }
+
+    .pictures img {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+    }
+
+    .quote {
+        padding: 20px;
+    }
+
+    .signup {
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjust styles for even smaller screens */
+    .logo {
+        font-size: 24px;
+    }
+
+    nav ul {
+        margin-left: 0;
+    }
+
+    a {
+        font-size: 18px;
+    }
+
+    .intro {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .intropic {
+        width: 100%;
+        height: auto;
+    }
+
+    .pictures img {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+    }
+
+    .pictures p {
+        font-size: 36px;
+    }
+
+    .quote {
+        padding: 10px;
+    }
+
+    .quote h1 {
+        font-size: 24px;
+    }
+
+    .quote b {
+        font-size: 18px;
+    }
+
+    .signup {
+        margin: 10px;
+    }
+
+    .signup h3 {
+        font-size: 18px;
+    }
+}
