@@ -166,7 +166,7 @@ h1 {
     position: absolute;
     top: 50px;
     left: -220px;
-    width: 200%;
+    width: 130%;
     height: 80%;
     background-color: rgba(40, 35, 42, 0.9); /* Set the background color with an opacity of 0.7 */
     z-index: -1;
