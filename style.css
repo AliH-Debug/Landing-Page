@@ -6,12 +6,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    height: 100vh;
 }
 
 .logo {
@@ -61,7 +56,6 @@ h1 {
 
 .opening {
     display: flex;
-    grid-template-columns: 1fr 1fr;
     flex-direction: column;
     justify-content: center;
     align-items: center;
